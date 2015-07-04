@@ -27,7 +27,7 @@ setup(
     keywords='Python Plone',
     author='Sune Broendum Woeller',
     author_email='sune@woeller.dk',
-    url='-',
+    url='https://github.com/collective/dualresources',
     license='GPL',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['collective'],
