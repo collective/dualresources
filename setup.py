@@ -14,7 +14,7 @@ long_description = (
 
 setup(
     name='collective.dualresources',
-    version='0.1',
+    version='0.2.dev0',
     description="An extension of the plone.resource plone:static zcml directive, that allows to specify two folders for a resource directory registration: A dev-directory and a dist-directory. When plone is running in debug mode the filesystem path specified in dev-directory is used to serve static resources for this resource registration. The dist-directory is used when not in debug mode. This allows to use tools like grunt to build production versions of resources, including minification, concatenation, image minification, etc.",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
