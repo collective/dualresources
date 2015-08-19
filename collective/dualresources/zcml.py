@@ -1,4 +1,4 @@
-import os.path
+import os
 
 from App.config import getConfiguration
 from zope.interface import Interface
@@ -96,12 +96,11 @@ def registerDualResourceDirectory(_context,
 
     zconfig = getConfiguration()
     debug_mode = zconfig.debug_mode
-    if debug_mode:
+    if debug_mode or 'THEME_USE_DEV_DIRECTORY' in os.environ:
         directory = os.path.sep.join(dev_directory.split('/'))
-        directory = FilesystemResourceDirectory(directory, name)
     else:
         directory = os.path.sep.join(dist_directory.split('/'))
-        directory = FilesystemResourceDirectory(directory, name)
+    directory = FilesystemResourceDirectory(directory, name)
 
     _context.action(
         discriminator=('plone:dualstatic', identifier),

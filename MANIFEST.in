@@ -1,3 +1,11 @@
+include *.cfg *.rst *.in *.ini
+exclude .installed.cfg
 graft collective
-graft docs/
-include *.cfg *.rst *.in
+graft docs
+global-exclude *pyc
+include *.py
+include .coveragerc
+include .gitattributes
+include .editorconfig
+recursive-include docs *.GPL
+recursive-include docs *.rst
