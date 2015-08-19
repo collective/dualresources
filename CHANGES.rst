@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.2 (unreleased)
+0.2 (2015-08-19)
 ----------------
 
 - Make it possible to configure the use of theme dev or dist directory with an environment variable.
